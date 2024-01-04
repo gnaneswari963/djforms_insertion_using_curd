@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_insert_student.html</h1>
+        <table border="3px">
+            <tr><th>sname</th>
+                <th>sage</th>
+                <th>sgender</th>
+                <th>scourse</th>
+                <th>saddress</th>
+                <th>spassword</th>
+            </tr> 
+               
+               {% for i in QLSO %}
+                    <tr>{{ i.sname }}</tr>
+                    <tr>{{ i.sage }}</tr>
+                    <tr>{{ i.sgender }}</tr>
+                    <tr>{{ i.scourse }}</tr>
+                    <tr>{{ i.saddress }}</tr>
+                    <tr>{{ i.spassword }}</tr>
+                    
+                    
+
+               {% endfor %}
+        </table>
+    </center> 
+</body>
+</html>
